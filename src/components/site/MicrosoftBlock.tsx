@@ -43,7 +43,7 @@ export const MicrosoftBlock = () => (
 
           <div className="grid items-stretch gap-0 lg:grid-cols-[1.15fr_1fr]">
             {/* ESQUERDA — Depoimento */}
-            <div className="relative p-10 lg:p-14">
+            <div className="relative overflow-hidden rounded-[2rem] border border-border/60 bg-white/95 p-10 shadow-premium backdrop-blur-xl lg:rounded-r-none lg:border-r-0 lg:p-14">
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">
