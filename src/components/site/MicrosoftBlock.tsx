@@ -34,7 +34,7 @@ export const MicrosoftBlock = () => (
     <div className="container relative">
       {/* Card principal — propositalmente sobreposto à seção Stats acima */}
       <div className="relative reveal">
-        <div className="overflow-hidden rounded-[2rem] border border-border/60 bg-white/95 shadow-premium backdrop-blur-xl">
+        <div className="relative rounded-[2rem]">
           {/* sheen superior */}
           <div
             aria-hidden
