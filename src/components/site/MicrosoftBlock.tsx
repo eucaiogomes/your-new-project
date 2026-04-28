@@ -18,7 +18,7 @@ const clients = [
 export const MicrosoftBlock = () => (
   <section
     id="clientes"
-    className="relative -mt-24 pb-28 pt-0"
+    className="relative z-20 -mt-24 pb-28 pt-0"
   >
     {/* fundo claro com leve gradiente azul vindo da seção anterior (Stats escura) */}
     <div
@@ -34,7 +34,7 @@ export const MicrosoftBlock = () => (
     <div className="container relative">
       {/* Card principal — propositalmente sobreposto à seção Stats acima */}
       <div className="relative reveal">
-        <div className="overflow-hidden rounded-[2rem] border border-border/60 bg-white/95 shadow-premium backdrop-blur-xl">
+        <div className="relative rounded-[2rem]">
           {/* sheen superior */}
           <div
             aria-hidden
@@ -43,7 +43,7 @@ export const MicrosoftBlock = () => (
 
           <div className="grid items-stretch gap-0 lg:grid-cols-[1.15fr_1fr]">
             {/* ESQUERDA — Depoimento */}
-            <div className="relative p-10 lg:p-14">
+            <div className="relative overflow-hidden rounded-[2rem] border border-border/60 bg-white/95 p-10 shadow-premium backdrop-blur-xl lg:rounded-r-none lg:border-r-0 lg:p-14">
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">
@@ -91,7 +91,7 @@ export const MicrosoftBlock = () => (
             </div>
 
             {/* DIREITA — Card visual */}
-            <div className="relative min-h-[380px] overflow-hidden bg-brand text-primary-foreground lg:min-h-0">
+            <div className="relative z-10 min-h-[440px] overflow-hidden rounded-[2rem] border border-white/10 bg-brand text-primary-foreground shadow-[0_30px_60px_-20px_hsl(222_80%_10%/0.55)] lg:-mt-16 lg:min-h-[520px] lg:rounded-l-none lg:border-l-0">
               {/* gradient mesh */}
               <div
                 aria-hidden
