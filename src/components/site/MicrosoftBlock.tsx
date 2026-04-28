@@ -188,11 +188,11 @@ export const MicrosoftBlock = () => (
       {/* Faixa de logos — passando atrás, efeito tela infinita */}
       <div className="relative mt-16 reveal">
         <div className="flex items-center gap-3 px-2">
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
-          <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+          <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-white/50">
             Alguns clientes
           </span>
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
         </div>
 
         <div className="marquee mt-8 py-4">
@@ -200,7 +200,7 @@ export const MicrosoftBlock = () => (
             {[...clients, ...clients].map((name, i) => (
               <span
                 key={`${name}-${i}`}
-                className="shrink-0 select-none font-display text-2xl font-bold uppercase tracking-tight text-ink/30 grayscale transition-all duration-500 hover:scale-105 hover:text-primary hover:grayscale-0 md:text-3xl"
+                className="shrink-0 select-none font-display text-2xl font-bold uppercase tracking-tight text-white/35 grayscale transition-all duration-500 hover:scale-105 hover:text-accent-glow hover:grayscale-0 md:text-3xl"
               >
                 {name}
               </span>
