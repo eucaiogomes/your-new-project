@@ -39,6 +39,7 @@ const Index = () => {
         <Hero />
         <ToolsScroll />
         <Stats />
+        <MicrosoftBlock />
         <Testimonials />
         <Solutions />
         <CtaForm />
