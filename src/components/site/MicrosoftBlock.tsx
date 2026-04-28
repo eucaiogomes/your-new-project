@@ -20,15 +20,24 @@ export const MicrosoftBlock = () => (
     id="clientes"
     className="relative z-20 mt-4 pb-28 pt-0"
   >
-    {/* fundo claro com leve gradiente azul vindo da seção anterior (Stats escura) */}
+    {/* Fundo unificado escuro — mesma DNA da seção Stats acima (tela infinita) */}
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-x-0 top-24 bottom-0 -z-10 bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_96%)_0%,_hsl(0_0%_100%)_55%,_hsl(220_30%_99%)_100%)]"
+      className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_14%)_0%,_hsl(222_85%_8%)_55%,_hsl(222_90%_6%)_100%)]"
     />
-    {/* fade que mistura com o topo escuro do Stats, criando "tela infinita" */}
+    {/* Mesh luminoso sutil (laranja + azul) — combinando com Stats */}
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-[hsl(222_90%_6%)]/0 via-transparent to-transparent"
+      className="pointer-events-none absolute inset-0 -z-10 opacity-60"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 15% 20%, hsl(22 95% 55% / 0.14) 0%, transparent 45%), radial-gradient(circle at 85% 80%, hsl(222 90% 55% / 0.16) 0%, transparent 45%)",
+      }}
+    />
+    {/* fade inferior — funde com a próxima seção (background claro) */}
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-x-0 -bottom-px -z-10 h-32 bg-gradient-to-t from-background to-transparent"
     />
 
     <div className="container relative">
