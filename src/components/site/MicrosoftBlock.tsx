@@ -134,13 +134,7 @@ export const MicrosoftBlock = () => (
                     "radial-gradient(circle at 80% 20%, hsl(222 90% 55% / 0.55), transparent 55%), radial-gradient(circle at 20% 90%, hsl(22 95% 55% / 0.35), transparent 50%)",
                 }}
               />
-              {/* Atomo orbital — DNA do hero */}
-              <div className="pointer-events-none absolute -right-20 -top-20 h-[420px] w-[420px] opacity-60" aria-hidden>
-                <svg viewBox="0 0 600 600" className="h-full w-full animate-[spin_70s_linear_infinite]">
-                  <ellipse cx="300" cy="300" rx="260" ry="110" stroke="hsl(30 100% 62% / 0.5)" strokeWidth="1.5" fill="none" transform="rotate(35 300 300)" />
-                  <ellipse cx="300" cy="300" rx="260" ry="110" stroke="hsl(0 0% 100% / 0.25)" strokeWidth="1" fill="none" transform="rotate(-35 300 300)" />
-                </svg>
-              </div>
+
 
               <div className="relative z-10 flex h-full flex-col justify-between p-10 lg:p-12">
                 <div>
