@@ -18,7 +18,7 @@ const clients = [
 export const MicrosoftBlock = () => (
   <section
     id="clientes"
-    className="relative z-20 -mt-24 pb-28 pt-0"
+    className="relative z-20 -mt-8 pb-28 pt-0"
   >
     {/* fundo claro com leve gradiente azul vindo da seção anterior (Stats escura) */}
     <div
