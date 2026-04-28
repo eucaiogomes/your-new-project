@@ -44,6 +44,30 @@ export const MicrosoftBlock = () => (
       {/* Card principal — propositalmente sobreposto à seção Stats acima */}
       <div className="relative reveal">
         <div className="relative rounded-[2rem]">
+          {/* Átomo orbital — centralizado entre os dois cards (DNA do Hero/Stats) */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute left-1/2 top-1/2 z-20 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 opacity-70 mix-blend-screen"
+          >
+            <svg viewBox="0 0 600 600" className="h-full w-full animate-[spin_70s_linear_infinite]">
+              <defs>
+                <linearGradient id="msAtomOrange" x1="0" x2="1">
+                  <stop offset="0%" stopColor="hsl(22 95% 55%)" stopOpacity="0" />
+                  <stop offset="50%" stopColor="hsl(22 95% 55%)" stopOpacity="0.95" />
+                  <stop offset="100%" stopColor="hsl(30 100% 62%)" stopOpacity="0" />
+                </linearGradient>
+                <linearGradient id="msAtomBlue" x1="0" x2="1">
+                  <stop offset="0%" stopColor="hsl(222 90% 60%)" stopOpacity="0" />
+                  <stop offset="50%" stopColor="hsl(222 90% 60%)" stopOpacity="0.85" />
+                  <stop offset="100%" stopColor="hsl(222 90% 38%)" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+              <ellipse cx="300" cy="300" rx="260" ry="110" stroke="url(#msAtomOrange)" strokeWidth="2" fill="none" transform="rotate(35 300 300)" />
+              <ellipse cx="300" cy="300" rx="260" ry="110" stroke="url(#msAtomBlue)" strokeWidth="1.6" fill="none" transform="rotate(-35 300 300)" />
+              <ellipse cx="300" cy="300" rx="260" ry="110" stroke="url(#msAtomOrange)" strokeWidth="1" fill="none" transform="rotate(90 300 300)" opacity="0.4" />
+            </svg>
+          </div>
+
           {/* sheen superior */}
           <div
             aria-hidden
