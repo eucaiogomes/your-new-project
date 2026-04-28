@@ -91,7 +91,7 @@ export const MicrosoftBlock = () => (
             </div>
 
             {/* DIREITA — Card visual */}
-            <div className="relative min-h-[380px] overflow-hidden bg-brand text-primary-foreground lg:min-h-0">
+            <div className="relative z-10 min-h-[440px] overflow-hidden rounded-[2rem] border border-white/10 bg-brand text-primary-foreground shadow-[0_30px_60px_-20px_hsl(222_80%_10%/0.55)] lg:-mt-16 lg:min-h-[520px] lg:rounded-l-none lg:border-l-0">
               {/* gradient mesh */}
               <div
                 aria-hidden
